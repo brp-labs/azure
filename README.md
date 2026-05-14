@@ -1,6 +1,8 @@
 # azure
 
-### Azure Functions
+## Azure Functions
+
+### HTTP Trigger
 
 #### Request
 > GET<br>
