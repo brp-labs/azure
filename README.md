@@ -1,4 +1,4 @@
-# azure
+# Azure
 
 ## Azure Functions
 
