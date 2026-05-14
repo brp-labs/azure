@@ -1,4 +1,6 @@
-/* .NET 8.0 Isolated Worker Model
+/* Azure Functions - HTTP Trigger
+ * 
+ * .NET 8.0 Isolated Worker Model
  * Local runtime: Azure Functions Core Tools.
  * 
  * Test på localhost:
@@ -23,6 +25,8 @@ namespace AzureFunctions
             _logger = logger;
         }
 
+
+        // ========================================================================================
         [Function("HttpFunctionHello")]
         public IActionResult Hello([HttpTrigger(
                 AuthorizationLevel.Anonymous,
@@ -40,7 +44,7 @@ namespace AzureFunctions
             return new OkObjectResult($"Hello {name}, welcome to Azure Functions!");
         }
 
-
+        // ========================================================================================
         [Function("HttpFunctionCode")]
         public IActionResult Code([HttpTrigger(
                 AuthorizationLevel.Anonymous,
@@ -58,7 +62,7 @@ namespace AzureFunctions
             return new OkObjectResult($"Your code is {code}");
         }
 
-
+        // ========================================================================================
         [Function("HttpFunctionSognekode")]   
         public IActionResult Sognekode([HttpTrigger(
                 AuthorizationLevel.Anonymous,
