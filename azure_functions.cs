@@ -84,7 +84,6 @@ namespace AzureFunctions
                 TimeZoneInfo.FindSystemTimeZoneById("Romance Standard Time")
             );
 
-
             var response = new
             {   metadata = new
                 {
@@ -103,7 +102,6 @@ namespace AzureFunctions
 
             return new JsonResult(response);
         }
-
 
 
     }
